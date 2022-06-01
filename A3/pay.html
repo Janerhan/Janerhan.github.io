@@ -59,11 +59,20 @@
                 <h4>316 La Trobe St
                     Melbourne, VIC, 3000
                     Australia</h4>
+                <div id="changes">
+                    <a href="delivery.html"><i class="fa-solid fa-pencil" id="pen"></i></a>
+                    <p><a href="delivery.html">Change Address</a></p>
+                </div>
+                
             </div>
             <div id="Contact-Details-container">
                 <h2>Contact Details</h2>
                 <span>Email</span><h4>janeeeeeeeee@email.com</h4>
                 <span>Phone</span><h4>+61 0444 444 444</h4>
+                <div id="changes">
+                    <a href="delivery.html"><i class="fa-solid fa-pencil" id="pen"></i></a>
+                    <p><a href="delivery.html">Change Contacts</a></p>
+                </div>
             </div>
             <div id="Billing-Address-container">
                 <h2>Billing Address</h2>
@@ -86,7 +95,7 @@
                 <div>
                     <div id="input-section" class="short-input-section">
                         <label for="exp-date-card" class="input-label">Expiry Date</label>
-                        <input type="date" name="exp-date-card" id="exp-date-card">
+                        <input type="date" name="exp-date-card" id="exp-date-card" style="color:#ffffff ;">
                     </div>
                     <div id="input-section" class="short-input-section">
                         <label for="cvv" class="input-label">CVV</label>
@@ -229,7 +238,40 @@
         </div>
     </footer>
 
+    <button id="open_popup">
+        click
+    </button>
+    
+    <div class="popup-container" id="popup_container">
+        <div class="popup">
+            <h1>Your order is complete!</h1>
+            <p>You will be receiving a confirmation email with order details</p>
+            <button id="close_popup">BACK TO HOME</button>
+        </div>
+    </div>
+    
+
     <script src="script.js"></script>
 </body>
 
 </html>
+
+<!-- jump different page via btn -->
+<!-- 
+<div onclick="window.location.href='books.html';">
+    <button class="btn" type="button">Explore</button>
+</div> -->
+
+<!-- <button id="open_popup">
+    click
+</button>
+
+<div class="popup-container" id="popup_container">
+    <div class="popup">
+        <h1>Your order is complete!</h1>
+        <p>You will be receiving a confirmation email with order details</p>
+        <button id="close_popup">BACK TO HOME</button>
+    </div>
+</div> -->
+
+

@@ -1323,6 +1323,73 @@ header h2{
     width: 180px;
 }
 
+/* change */
+#changes {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-top: 10px;
+}
+
+#changes a {
+    font-size: 12px;
+    font-weight: 200;
+    color: #8ABF8E;
+    padding-left: 0.5rem
+    
+}
+
+#pen {
+    color: #8ABF8E;
+    padding-left: 20rem;
+}
+
+/* popup setting*/
+
+#open_popup{
+    border: 0;
+    background-color: #709e70;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+.popup-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #415661;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    transition: opacity 0.3s ease;
+}
+
+.popup-container .show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.popup {
+    background-color: #ffffffaa;
+    padding: 20px 50px;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.popup h1{
+    margin: 0;
+}
+
+.popup p{
+    font-size: 14px;
+    opacity: 0.7;
+}
 
 
 
