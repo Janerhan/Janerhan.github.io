@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3 Implementation</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1aff2e5f5d.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+
+<body>
+    <!--Header & Navbar-->
+    <section id="header">
+        <a href="#"><img src="Img/csiro logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="highlight" href="Books.html">Books</a></li>
+                <li><a href="Journals.html">Journals</a></li>
+                <li><a href="Learning.html">Learning</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping" id="shopping-bag"></i></a></li>
+            </ul>
+        </div>
+            <div class="search-box">
+                <input class="search-txt" type="text" placeholder="Search Name, Author or ISBN...">
+                <a class="search-btn" href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <div id="mobile">
+            <i class="fa-solid fa-align-right"></i>
+        </div>
+
+    </section>
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="des">
+            <h1>Explore</h1>
+        <ul>
+            <li><a href="#" class="item">On Sale</a></li>
+            <li><a href="#" class="item">Best Sellers</a></li>
+            <li><a href="#">
+                <span class="item">New Releases </span></a></li>
+            <li><a href="#" class="item">Forthcoming Releases</a></li>
+        </ul>
+        <h1>Categories</h1>
+        <ul>
+            <li><a href="#" class="item">Animals</a></li>
+            <li><a href="#" class="item">Children</a></li>
+            <li><a href="#" class="item">Gardening</a></li>
+            <li><a href="#" class="item">Architecture</a></li>
+            <li><a href="#" class="item">Plants & Fungi</a></li>
+            <li><a href="#" class="item">Physical Science</a></li>
+            <li><a href="#" class="item">Science in Society</a></li>
+            <li><a href="#" class="item">Food & Agriculture</a></li>
+            <li><a href="#" class="item">Marine & Freshwater</a></li>
+            <li><a href="#" class="item">Natural Environment</a></li>
+        </ul>
+        </div>
+    </section>
+
+    <!-- title -->
+    <section id="title">
+        <div class="text">
+            <p>Home > New Releases</p>
+            <h1>New Releases</h1>
+        </div>
+    </section>
+
+    <!-- filter-->
+    <section id="filter">
+        <div class="container-filter">
+            <span>Filter</span>
+            <select name="" id="">
+                <option value="Relevance"> Relevance</option>
+                <option value="Alphabetically"> Alphabetically</option>
+                <option value="PublicationDate"> Publication Date</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- price change
+    <div class="wrapper">
+        <header>
+            <h2>Price Range</h2>
+        </header>
+        <div class="price-input">
+            <div class="field">
+                <span>Min</span>
+                <input type="number" class="input-min" value="0">
+            </div>
+            <div class="separator">-</div>
+            <div class="field">
+                <span>Max</span>
+                <input type="number" class="input-max" value="999+">
+            </div>
+        </div>
+        <div class="slider">
+            <div class="progress">
+            </div>
+            <div class="range-input">
+                <input type="range">
+            </div>
+        </div>
+    </div> -->
+    
+    <!-- product section -->
+    <section id="product">
+        <div class="product-container">
+            <div class="pro">
+                <img class ="img-box" src="img/new releases/poo.jpg" alt="">
+                <div class="des">
+                    <h2>POO, SPEW AND OTHER GROSS 
+                        THINGS ANIMALS DO!</h2>
+                    <h3>Nic Gill, Romane Cristescu</h3>
+                    <span>AU $29.99</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus circle-icon" style="font-size: 23px"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- page number -->
+    <section id="page-number" class="padding-1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+
+    <!--Footer-->
+    <!-- <footer>
+        <div class="col">
+            <h1>Connect With Us</h1>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-square" style="font-size:30px"></i>
+                <i class="fa-brands fa-twitter" style="font-size:30px"></i>
+                <i class="fa-brands fa-instagram" style="font-size:30px"></i>
+                <i class="fa-brands fa-linkedin" style="font-size:30px"></i>
+            </div>
+        </div>
+
+        <div class="col">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Ordering Books</a>
+            <a href="#">eBooks</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col">
+            <a href="#">Open Access</a>
+            <a href="#">Journal Subscriptions</a>
+            <a href="#">For Librarians</a>
+            <a href="#">Workshops</a>
+            <a href="#">Building Technology Resources</a>
+        </div>
+
+        <div class="copyright">
+            <p>We acknowledge the Traditional Owners of the land, sea and waters, of the areas that we live and work on across Australia. We acknowledge their continuing connection to their culture, their contribution to our shared knowledge, and pay our respects to their Elders past and present.</p>
+            <P>© CSIRO 1996-2022</P>
+        </div>
+    </footer> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

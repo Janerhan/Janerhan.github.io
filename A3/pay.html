@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3 Implementation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1aff2e5f5d.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!--Header & Navbar-->
+    <section id="header">
+        <a href="#"><img src="Img/csiro logo.png" class="logo" id="L" calt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Books.html">Books</a></li>
+                <li><a href="Journals.html">Journals</a></li>
+                <li><a href="Learning.html">Learning</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a class="highlight" id="sidebar-bag" href="cart.html"><i class="fa-solid fa-bag-shopping"
+                            style="font-size: 22px;"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div class="search-box">
+            <input class="search-txt" type="text" placeholder="Search Name, Author or ISBN...">
+            <a id="searchbtn" class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-align-right"></i>
+        </div>
+
+    </section>
+
+    <!-- Checkout-delivery -->
+    <section id="login">
+        <div id="left-col">
+            <h1>Checkout</h1>
+            <div>
+                <ul id="process-box">
+                    <li><a href="login.html">Log in</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a class="highlight" href="pay.html">Payment</a></li>
+                </ul>
+            </div>
+            <div id="shipping-container">
+                <h2>Shipping Address</h2>
+                <span>Janeeeeee Yuan</span>
+                <h4>316 La Trobe St
+                    Melbourne, VIC, 3000
+                    Australia</h4>
+            </div>
+            <div id="Contact-Details-container">
+                <h2>Contact Details</h2>
+                <span>Email</span><h4>janeeeeeeeee@email.com</h4>
+                <span>Phone</span><h4>+61 0444 444 444</h4>
+            </div>
+            <div id="Billing-Address-container">
+                <h2>Billing Address</h2>
+                <label for="myradio"  class="radio">
+                    <input type="radio" name="myradiofield" id="myyradio" class="radio__input">
+                    <div class="radio__radio"></div>
+                    My billing address is the same as my shipping address
+                </label>
+            </div>
+            <div id="pay-container">
+                <h2>Payment Information</h2>
+                <div id="input-section">
+                    <label for="card-name" class="input-label">Name on Card</label>
+                    <input type="text" id="card-name" placeholder="Phone number">
+                </div>
+                <div id="input-section">
+                    <label for="card-num" class="input-label">Card Number</label>
+                    <input type="text" id="card-num" placeholder="Phone number">
+                </div>
+                <div>
+                    <div id="input-section" class="short-input-section">
+                        <label for="exp-date-card" class="input-label">Expiry Date</label>
+                        <input type="date" name="exp-date-card" id="exp-date-card">
+                    </div>
+                    <div id="input-section" class="short-input-section">
+                        <label for="cvv" class="input-label">CVV</label>
+                        <input type="text" name="cvv" id="cvv">
+                    </div>
+                </div>
+                <label for="myradio"  class="radio">
+                    <input type="radio" name="myradiofield" id="myyradio" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Save this card for further payment
+                </label>
+            </div>
+            <button class="btn">PLACE ORDER</button>
+        </div>
+
+
+        <div id="right-col">
+            <h4>Summary</h4>
+            <table width="30%" class="checkout-sumbox">
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$ 444.98</td>
+                </tr>
+                <tr>
+                    <td>Shipping Cost</td>
+                    <td>+ $ 9.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 444.98</strong></td>
+                </tr>
+            </table>
+            <h2>Arrives Thu, 21 Apr - Sun, 8 May</h2>
+            <table width="100%">
+                <tbody>
+                    <td class="sum-item-box"><img src="./Img/shopping bag/swim.jpg" alt=""></td>
+                    <td class="text">
+                        <h1>SWIM, SHARK, SWIM!</h1>
+                        <h2>By Dom Conlon, Anastasia Izlesou</h2>
+                        <h3>Children</h3>
+                        <p>Qty 1</p>
+                    </td>
+                    <td class="price">AU $24.99</td>
+                </tbody>
+                <tbody>
+                    <td class="sum-item-box"><img src="./Img/shopping bag/aus des.jpg" alt=""></td>
+                    <td class="text">
+                        <h1>AUSTRALIAN DESERTS</h1>
+                        <h2>By Steve Morton</h2>
+                        <h3>Natural Environment</h3>
+                        <p>Qty 1</p>
+                    </td>
+                    <td class="price">AU $59.99</td>
+                </tbody>
+                <tbody>
+                    <td class="sum-item-box"><img src="./Img/shopping bag/aus wee.jpg" alt=""></td>
+                    <td class="text">
+                        <h1>AUSTRALIAN WEEVILS</h1>
+                        <h2>By Rolf Oberprieler</h2>
+                        <h3>Animals</h3>
+                        <p>Qty 2</p>
+                    </td>
+                    <td class="price">AU $360.00</td>
+                </tbody>
+                
+                
+
+            </table>
+        </div>
+    </section>
+
+    <!--You Might Also Like-->
+    <section id="Like">
+        <h1>You Might Also Like</h1>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='subooks.html';">
+                <img src="./Img/books_like section/shark.jpg" alt="">
+                <div class="des">
+                    <h2>Shark Attacks</h2>
+                    <span>Animals</span>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="./img/books_like section/bat.jpg" alt="">
+                <div class="des">
+                    <h2>A Bat's End</h2>
+                    <span>Animals</span>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="./img/books_like section/Australian Agriculture.jpg" alt="">
+                <div class="des">
+                    <h2>Australian Agriculture</h2>
+                    <span>Heritage and History</span>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/books_like section/Australian Weevils.jpg" alt="">
+                <div class="des">
+                    <h2>Australian Weevils</h2>
+                    <span>Animals</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="col">
+            <h1>Connect With Us</h1>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-square" style="font-size:30px"></i>
+                <i class="fa-brands fa-twitter" style="font-size:30px"></i>
+                <i class="fa-brands fa-instagram" style="font-size:30px"></i>
+                <i class="fa-brands fa-linkedin" style="font-size:30px"></i>
+            </div>
+        </div>
+
+        <div class="col">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Ordering Books</a>
+            <a href="#">eBooks</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col">
+            <a href="#">Open Access</a>
+            <a href="#">Journal Subscriptions</a>
+            <a href="#">For Librarians</a>
+            <a href="#">Workshops</a>
+            <a href="#">Building Technology Resources</a>
+        </div>
+
+        <div class="copyright">
+            <p>We acknowledge the Traditional Owners of the land, sea and waters, of the areas that we live and work on
+                across Australia. We acknowledge their continuing connection to their culture, their contribution to our
+                shared knowledge, and pay our respects to their Elders past and present.</p>
+            <P>© CSIRO 1996-2022</P>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

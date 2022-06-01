@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3 Implementation</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1aff2e5f5d.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+
+<body>
+    <!--Header & Navbar-->
+    <section id="header">
+        <a href="#"><img src="Img/csiro logo.png" class="logo" id="L"calt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="highlight" href="index.html">Home</a></li>
+                <li><a href="Books.html">Books</a></li>
+                <li><a href="Journals.html">Journals</a></li>
+                <li><a href="Learning.html">Learning</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a id="sidebar-bag" href="cart.html"><i class="fa-solid fa-bag-shopping" style="font-size: 22px;"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+            <div class="search-box">
+                <input class="search-txt" type="text" placeholder="Search Name, Author or ISBN...">
+                <a id="searchbtn" class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-align-right"></i>
+        </div>
+
+    </section>
+
+    <!--Hero-->
+    <section class="hero">
+            <h1>Finding</h1>
+            <h2>Your <span>Interests </span> Here!</h2>
+            <p>CSIROPUBLISHING is a website designed for people who <br>
+                want to buy products in high-quality scientific, technical <br>
+                and health journals, books, multimedia and magazines.</p>
+            <div onclick="window.location.href='books.html';">
+                <button class="btn" type="button">Explore</button>
+            </div>
+    </section>
+    
+    <!--Category Grid-->
+    <div class="title-cate">
+        <h1>You Might Also Like</h1>
+    </div>
+    <section class="category-1">
+        <figure>
+            <a href="#"><img src="./Img/Category/Homepage1_animals.jpg" alt="" srcset=""></a>
+            <figcaption>Animals</figcaption>
+        </figure>
+        <figure>
+            <a href="#"><img src="./Img/Category/Homepage1_plantssss.jpg" alt="" srcset=""></a>
+            <figcaption>Gardening</figcaption>
+        </figure>
+        <figure>
+            <a href="#"><img src="./Img/Category/Homepage1_SCIENCE IN SOCIETY.jpg" alt="" srcset=""></a>
+            <figcaption>Science in Society</figcaption>
+        </figure>
+    </section>
+
+    <section class="category-2">
+        <figure>
+            <a href="#"><img src="./Img/Category/Homepage1_physical science.png" alt="" srcset=""></a>
+            <figcaption>Physical Science</figcaption>
+        </figure>
+        <figure>
+            <a href="#"><img src= "./Img/Category/Homepage1_Natural environment.jpg" alt="" srcset=""></a>
+            <figcaption>Natural Environment</figcaption>
+        </figure>
+        <figure>
+            <a href="#"><img src="./Img/Category/Homepage1_food agriculture.png" alt="" srcset=""></a>
+            <figcaption>Food & Agriculture</figcaption>
+        </figure>
+    </section>
+
+    <section class="category-3">
+        <figure>
+            <a href="#"><img src="./Img/Category/Homepage1_plants.jpg" alt="" srcset=""></a>
+            <figcaption>Plants & Fungi</figcaption>
+        </figure>
+        <figure>
+            <a href="#"><img src="./Img/Category/Homepage1_MARINE & FRESHWATER.jpg" alt="" srcset=""></a>
+            <figcaption>Marine & Freshwater</figcaption>
+        </figure>
+        <figure>
+            <a href="#"><img src="./Img/Category/Homepage1_architecture.jpg" alt="" srcset=""></a>
+            <figcaption>Architecture</figcaption>
+        </figure>
+    </section>
+
+    <!--EMAIL ALERT-->
+    <section id="EMAIL-ALERT">
+        <div class="EMAIL-ALERT-text">
+            <h1>Sign Up For EMAIL ALERT</h1>
+            <h2>To keep you up-to-date with the journals, books and magazines that we publish,
+                <br>sign up to the Early Alert mailing lists of your choice.</br>
+            </h2>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <!--You Might Also Like-->
+    <section id="Like">
+        <h1>You Might Also Like</h1>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='subooks.html';">
+                <img src="./Img/books_like section/shark.jpg" alt="">
+                <div class="des">
+                    <h2>Shark Attacks</h2>
+                    <span>Animals</span>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="./img/books_like section/bat.jpg" alt="">
+                <div class="des">
+                    <h2>A Bat's End</h2>
+                    <span>Animals</span>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="./img/books_like section/Australian Agriculture.jpg" alt="">
+                <div class="des">
+                    <h2>Australian Agriculture</h2>
+                    <span>Heritage and History</span>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/books_like section/Australian Weevils.jpg" alt="">
+                <div class="des">
+                    <h2>Australian Weevils</h2>
+                    <span>Animals</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Footer-->
+    <footer>
+        <div class="col">
+            <h1>Connect With Us</h1>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-square" style="font-size:30px"></i>
+                <i class="fa-brands fa-twitter" style="font-size:30px"></i>
+                <i class="fa-brands fa-instagram" style="font-size:30px"></i>
+                <i class="fa-brands fa-linkedin" style="font-size:30px"></i>
+            </div>
+        </div>
+
+        <div class="col">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Ordering Books</a>
+            <a href="#">eBooks</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col">
+            <a href="#">Open Access</a>
+            <a href="#">Journal Subscriptions</a>
+            <a href="#">For Librarians</a>
+            <a href="#">Workshops</a>
+            <a href="#">Building Technology Resources</a>
+        </div>
+
+        <div class="copyright">
+            <p>We acknowledge the Traditional Owners of the land, sea and waters, of the areas that we live and work on across Australia. We acknowledge their continuing connection to their culture, their contribution to our shared knowledge, and pay our respects to their Elders past and present.</p>
+            <P>© CSIRO 1996-2022</P>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
