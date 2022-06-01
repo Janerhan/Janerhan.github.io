@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <button id="open_popup">
+        click
+    </button>
+    
+    <div class="popup-container" id="popup_container">
+        <div class="popup">
+            <h1>Your order is complete!</h1>
+            <p>You will be receiving a confirmation email with order details</p>
+            <button id="close_popup">BACK TO HOME</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
