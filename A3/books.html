@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A3 Implementation</title>
-    
+
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1aff2e5f5d.js" crossorigin="anonymous"></script>
-    
-    
+
+
 </head>
 
 <body>
     <!--Header & Navbar-->
     <section id="header">
-        <a href="#"><img src="Img/csiro logo.png" class="logo" alt=""></a>
+        <a href="index.html"><img src="Img/csiro logo.png" class="logo" id="L"calt=""></a>
 
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a class="highlight" href="Books.html">Books</a></li>
+                <li><a class="highlight" href="books.html">Books</a></li>
                 <li><a href="Journals.html">Journals</a></li>
                 <li><a href="Learning.html">Learning</a></li>
                 <li><a href="Blog.html">Blog</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping" id="shopping-bag"></i></a></li>
+                <li><a id="sidebar-bag" href="cart.html"><i class="fa-solid fa-bag-shopping" style="font-size: 22px;"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
             <div class="search-box">
                 <input class="search-txt" type="text" placeholder="Search Name, Author or ISBN...">
-                <a class="search-btn" href="#">
-            <i class="fa-solid fa-magnifying-glass"></i>
+                <a id="searchbtn" class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i>
                 </a>
             </div>
-            <div id="mobile">
-            <i class="fa-solid fa-align-right"></i>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-align-right"></i>
         </div>
 
     </section>
@@ -43,26 +45,26 @@
     <section id="sidebar">
         <div class="des">
             <h1>Explore</h1>
-        <ul>
-            <li><a href="#" class="item">On Sale</a></li>
-            <li><a href="#" class="item">Best Sellers</a></li>
-            <li><a href="#">
-                <span class="item">New Releases </span></a></li>
-            <li><a href="#" class="item">Forthcoming Releases</a></li>
-        </ul>
-        <h1>Categories</h1>
-        <ul>
-            <li><a href="#" class="item">Animals</a></li>
-            <li><a href="#" class="item">Children</a></li>
-            <li><a href="#" class="item">Gardening</a></li>
-            <li><a href="#" class="item">Architecture</a></li>
-            <li><a href="#" class="item">Plants & Fungi</a></li>
-            <li><a href="#" class="item">Physical Science</a></li>
-            <li><a href="#" class="item">Science in Society</a></li>
-            <li><a href="#" class="item">Food & Agriculture</a></li>
-            <li><a href="#" class="item">Marine & Freshwater</a></li>
-            <li><a href="#" class="item">Natural Environment</a></li>
-        </ul>
+            <ul>
+                <li><a href="#" class="item">On Sale</a></li>
+                <li><a href="#" class="item">Best Sellers</a></li>
+                <li><a href="#">
+                        <span class="item">New Releases </span></a></li>
+                <li><a href="#" class="item">Forthcoming Releases</a></li>
+            </ul>
+            <h1>Categories</h1>
+            <ul>
+                <li><a href="#" class="item">Animals</a></li>
+                <li><a href="#" class="item">Children</a></li>
+                <li><a href="#" class="item">Gardening</a></li>
+                <li><a href="#" class="item">Architecture</a></li>
+                <li><a href="#" class="item">Plants & Fungi</a></li>
+                <li><a href="#" class="item">Physical Science</a></li>
+                <li><a href="#" class="item">Science in Society</a></li>
+                <li><a href="#" class="item">Food & Agriculture</a></li>
+                <li><a href="#" class="item">Marine & Freshwater</a></li>
+                <li><a href="#" class="item">Natural Environment</a></li>
+            </ul>
         </div>
     </section>
 
@@ -77,8 +79,19 @@
     <!-- filter-->
     <section id="filter">
         <div class="container-filter">
-            <span>Filter</span>
-            <select name="" id="">
+            <span>Price</span>
+            <select name="" id="price_select">
+                <option value="High - Low">High - Low</option>
+                <option value="Low - High">Low - High</option>
+            </select>
+            <span>State</span>
+            <select name="" id="state_select">
+                <option value="Instock">In stock</option>
+                <option value="Magzines">Magzines</option>
+                <option value="Pre-Ordered">Pre-Ordered</option>
+            </select>
+            <span>Sort</span>
+            <select name="" id="filter_select">
                 <option value="Relevance"> Relevance</option>
                 <option value="Alphabetically"> Alphabetically</option>
                 <option value="PublicationDate"> Publication Date</option>
@@ -86,38 +99,93 @@
         </div>
     </section>
 
-    <!-- price change
-    <div class="wrapper">
-        <header>
-            <h2>Price Range</h2>
-        </header>
-        <div class="price-input">
-            <div class="field">
-                <span>Min</span>
-                <input type="number" class="input-min" value="0">
-            </div>
-            <div class="separator">-</div>
-            <div class="field">
-                <span>Max</span>
-                <input type="number" class="input-max" value="999+">
-            </div>
-        </div>
-        <div class="slider">
-            <div class="progress">
-            </div>
-            <div class="range-input">
-                <input type="range">
-            </div>
-        </div>
-    </div> -->
-    
     <!-- product section -->
     <section id="product">
         <div class="product-container">
             <div class="pro">
-                <img class ="img-box" src="img/new releases/poo.jpg" alt="">
+                <img class="img-box" src="img/new releases/poo.jpg" alt="">
                 <div class="des">
-                    <h2>POO, SPEW AND OTHER GROSS 
+                    <h2>POO, SPEW AND OTHER GROSS
+                        THINGS ANIMALS DO!</h2>
+                    <h3>Nic Gill, Romane Cristescu</h3>
+                    <span>AU $29.99</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus circle-icon" style="font-size: 23px"></i></a>
+            </div>
+            <div class="pro">
+                <img class="img-box" src="img/new releases/poo.jpg" alt="">
+                <div class="des">
+                    <h2>POO, SPEW AND OTHER GROSS
+                        THINGS ANIMALS DO!</h2>
+                    <h3>Nic Gill, Romane Cristescu</h3>
+                    <span>AU $29.99</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus circle-icon" style="font-size: 23px"></i></a>
+            </div>
+            <div class="pro">
+                <img class="img-box" src="img/new releases/poo.jpg" alt="">
+                <div class="des">
+                    <h2>POO, SPEW AND OTHER GROSS
+                        THINGS ANIMALS DO!</h2>
+                    <h3>Nic Gill, Romane Cristescu</h3>
+                    <span>AU $29.99</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus circle-icon" style="font-size: 23px"></i></a>
+            </div>
+            <div class="pro">
+                <img class="img-box" src="img/new releases/poo.jpg" alt="">
+                <div class="des">
+                    <h2>POO, SPEW AND OTHER GROSS
+                        THINGS ANIMALS DO!</h2>
+                    <h3>Nic Gill, Romane Cristescu</h3>
+                    <span>AU $29.99</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus circle-icon" style="font-size: 23px"></i></a>
+            </div>
+            <div class="pro">
+                <img class="img-box" src="img/new releases/poo.jpg" alt="">
+                <div class="des">
+                    <h2>POO, SPEW AND OTHER GROSS
+                        THINGS ANIMALS DO!</h2>
+                    <h3>Nic Gill, Romane Cristescu</h3>
+                    <span>AU $29.99</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus circle-icon" style="font-size: 23px"></i></a>
+            </div>
+            <div class="pro">
+                <img class="img-box" src="img/new releases/poo.jpg" alt="">
+                <div class="des">
+                    <h2>POO, SPEW AND OTHER GROSS
+                        THINGS ANIMALS DO!</h2>
+                    <h3>Nic Gill, Romane Cristescu</h3>
+                    <span>AU $29.99</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus circle-icon" style="font-size: 23px"></i></a>
+            </div>
+            <div class="pro">
+                <img class="img-box" src="img/new releases/poo.jpg" alt="">
+                <div class="des">
+                    <h2>POO, SPEW AND OTHER GROSS
+                        THINGS ANIMALS DO!</h2>
+                    <h3>Nic Gill, Romane Cristescu</h3>
+                    <span>AU $29.99</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus circle-icon" style="font-size: 23px"></i></a>
+            </div>
+            <div class="pro">
+                <img class="img-box" src="img/new releases/poo.jpg" alt="">
+                <div class="des">
+                    <h2>POO, SPEW AND OTHER GROSS
+                        THINGS ANIMALS DO!</h2>
+                    <h3>Nic Gill, Romane Cristescu</h3>
+                    <span>AU $29.99</span>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus circle-icon" style="font-size: 23px"></i></a>
+            </div>
+            <div class="pro">
+                <img class="img-box" src="img/new releases/poo.jpg" alt="">
+                <div class="des">
+                    <h2>POO, SPEW AND OTHER GROSS
                         THINGS ANIMALS DO!</h2>
                     <h3>Nic Gill, Romane Cristescu</h3>
                     <span>AU $29.99</span>
@@ -126,19 +194,62 @@
             </div>
         </div>
     </section>
+
+    <!-- mobile-sidebar -->
+    <section id="mobile_sidebar">
+        <div class="drop-btn">
+            <span id="dropbtn"><i class="fa-solid fa-filter"></i></span>
+        </div>
+        <div class="wrapper">
+            <div class="menu-bar" id="menubar">
+                <span>Category</span>
+                <select name="" id="Category_bar">
+                    <option value="animal">Animals</option>
+                    <option value="Children">Children</option>
+                    <option value="Gardening">Gardening</option>
+                    <option value="Architecture">Architecture</option>
+                    <option value="Plants & Fungi">Plants & Fungi</option>
+                    <option value="Physical Science">Physical Science</option>
+                    <option value="Science in Society">Science in Society</option>
+                    <option value="Food & Agriculture">Food & Agriculture</option>
+                    <option value="Marine & Freshwater">Marine & Freshwater</option>
+                    <option value="Natural Environment">Natural Environment</option>
+                </select>
+                <span>Price</span>
+                <select name="" id="price_bar">
+                    <option value="High - Low">High - Low</option>
+                    <option value="Low - High">Low - High</option>
+                </select>
+                <span>State</span>
+                <select name="" id="state_bar">
+                    <option value="Instock">In stock</option>
+                    <option value="Magzines">Magzines</option>
+                    <option value="Pre-Ordered">Pre-Ordered</option>
+                </select>
+                <span>Sort</span>
+                <select name="" id="sort_bar">
+                    <option value="Relevance"> Relevance</option>
+                    <option value="Alphabetically"> Alphabetically</option>
+                    <option value="PublicationDate"> Publication Date</option>
+                </select>
+                <a href="#" id="closebtn"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </div>
+    </section>
+
     <!-- page number -->
     <section id="page-number" class="padding-1">
         <a href="#">1</a>
         <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
+        <a href="#" class="three">3</a>
+        <a href="#" class="four">4</a>
+        <a href="#" class="five">5</a>
         <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
     </section>
 
 
     <!--Footer-->
-    <!-- <footer>
+    <footer>
         <div class="col">
             <h1>Connect With Us</h1>
             <div class="icon">
@@ -166,11 +277,14 @@
         </div>
 
         <div class="copyright">
-            <p>We acknowledge the Traditional Owners of the land, sea and waters, of the areas that we live and work on across Australia. We acknowledge their continuing connection to their culture, their contribution to our shared knowledge, and pay our respects to their Elders past and present.</p>
+            <p>We acknowledge the Traditional Owners of the land, sea and waters, of the areas that we live and work on
+                across Australia. We acknowledge their continuing connection to their culture, their contribution to our
+                shared knowledge, and pay our respects to their Elders past and present.</p>
             <P>© CSIRO 1996-2022</P>
         </div>
-    </footer> -->
+    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
