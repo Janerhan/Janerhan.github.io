@@ -395,6 +395,9 @@ span {
 #Like {
     padding: 20px 10%;
 }
+#Like * {
+    background-color: unset;
+}
 
 #Like h1 {
     padding-top: 2.5rem;
@@ -1213,6 +1216,7 @@ footer .copyright {
     color: #ffffffe1;
     font-size: 13px;
     line-height: 30px;
+    margin-bottom: 20px;
 }
 
 .radio__input {
@@ -1299,7 +1303,8 @@ footer .copyright {
 
 .btn {
     margin-left: 70px;
-    margin-top: 20px;
+    margin-top: 10px;
+    text-decoration: none;
 }
 
 /* CHECKOUT PROCESS */
@@ -1361,7 +1366,92 @@ footer .copyright {
 
 /* popup setting*/
 
-#open_popup {
+.popup-overlay {
+    background-color: unset;
+}
+.popup-overlay{
+    position: fixed;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #bcbcbcc5;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup-overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.popup-txt {
+    position: relative;
+    width: 60%;
+    height: 56vh;
+    background-color: #263c47dc;
+    border-radius: 20px;
+    box-shadow: #1b303b;
+    margin: 100px auto;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.popup-txt .close_popup {
+    position: absolute;
+    background-color: transparent;
+    top: 40px;
+    right: 50px;
+    color: #ffffff;
+    font-size: 30px;
+    transition: 0.3s ease;
+}
+
+.txt {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+.popup-txt .txt{
+    overflow: auto;
+}
+
+#email {
+    font-size: 130px;
+    color: #709e70be;
+    background-color: transparent;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.popup-overlay .btn{
+    margin: 0;
+    margin-top: 50px;
+}
+
+.popup-overlay h1{
+    margin-top: 50px;
+}
+
+.popup-txt .close_popup:hover{
+    color: #709e70;
+}
+
+
+
+
+/* #open_popup {
     border: 0;
     background-color: #709e70;
     color: #ffffff;
@@ -1404,7 +1494,7 @@ footer .copyright {
 .popup p {
     font-size: 14px;
     opacity: 0.7;
-}
+} */
 
 
 
@@ -1654,14 +1744,21 @@ footer .copyright {
 
 
 
+
+    
     /* BOOKS PAGE */
+
+    #title h1 {
+        margin-top: 25px;
+    }
+
     #sidebar {
         display: none;
     }
 
     #title .text,
     #product {
-        padding: 10px 30px;
+        padding: 5px 20px;
     }
 
     .product-container {
@@ -1669,6 +1766,11 @@ footer .copyright {
         justify-content: center;
         flex-wrap: wrap;
         opacity: 1;
+    }
+
+    #title .text, #product {
+        padding: 28px 30px;
+        margin-top: -46px;
     }
 
 
@@ -1679,14 +1781,16 @@ footer .copyright {
     /* mobile-sidebar */
     #mobile_sidebar {
         padding-left: 218px;
-        position: fixed;
     }
 
     #dropbtn{
         font-size: 24px;
         color: #ffffffe0;
         padding-left: 108px;
-
+        margin-left: 203px;
+        position: fixed;
+        cursor: pointer;
+        transition: 0.3s;
     }
     .menu-bar {
         display: flex;
@@ -1694,9 +1798,9 @@ footer .copyright {
         align-items: flex-start;
         justify-content: flex-start;
         position: fixed;
-        top: 85px;
-        right: -30px;
-        height: 86vh;
+        top: 31px;
+        right: -300px;
+        height: 50vh;
         width: 250px;
         margin-top: 88px;
         background-color: #ffffffe3;
@@ -1704,7 +1808,15 @@ footer .copyright {
         padding: 50px 0 0 6px;
         transition: 0.3s;
         z-index: 999;
+        box-shadow: 0px 9px 19px 0px #7296aaa6;
     }
+
+    #dropbtn:hover{
+        color: #709e70;
+    }
+
+
+
 
     #menubar.active {
         right: -10px;
@@ -1713,11 +1825,11 @@ footer .copyright {
 
     #closebtn {
         display: initial;
-        padding-top: -23px;
         margin-top: -294px;
-        margin-left: 190px;
+        margin-left: 168px;
         font-size: 24px;
         font-weight: 600;
+        background-color: transparent;
         color: #1b303b;
     }
 
@@ -1732,12 +1844,20 @@ footer .copyright {
 
     .menu-bar select {
         padding: 15px 0px 14px 15px;
-        width: 160px;
+        width: 185px;
         cursor: pointer;
         border: none;
         outline: none;
         background-color: transparent;
         color: #1b303b;
+    }
+
+    .menu-bar option{
+        background-color: transparent;
+        color: #1b303b;
+        cursor: pointer;
+        border: none;
+        outline: none;
     }
 
 
