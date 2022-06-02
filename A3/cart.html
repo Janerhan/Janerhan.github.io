@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A3 Implementation</title>
-    
+
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1aff2e5f5d.js" crossorigin="anonymous"></script>
-    
-    
+
+
 </head>
 
 <body>
     <!--Header & Navbar-->
     <section id="header">
-        <a href="#"><img src="Img/csiro logo.png" class="logo" id="L"calt=""></a>
+        <a href="#"><img src="Img/csiro logo.png" class="logo" id="L" calt=""></a>
 
         <div>
             <ul id="navbar">
-                <li><a class="highlight" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="Books.html">Books</a></li>
                 <li><a href="Journals.html">Journals</a></li>
                 <li><a href="Learning.html">Learning</a></li>
                 <li><a href="Blog.html">Blog</a></li>
-                <li><a id="sidebar-bag" href="cart.html"><i class="fa-solid fa-bag-shopping" style="font-size: 22px;"></i></a></li>
+                <li><a class="highlight" id="sidebar-bag" href="cart.html"><i class="fa-solid fa-bag-shopping"
+                            style="font-size: 22px;"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
-            <div class="search-box">
-                <input class="search-txt" type="text" placeholder="Search Name, Author or ISBN...">
-                <a id="searchbtn" class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-            </div>
+        <div class="search-box">
+            <input class="search-txt" type="text" placeholder="Search Name, Author or ISBN...">
+            <a id="searchbtn" class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
         <div id="mobile">
             <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
             <i id="bar" class="fa-solid fa-align-right"></i>
@@ -56,7 +58,9 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="#" class="remove"><i class="fa-solid fa-xmark"></i></a></td>
+                    <td><a href="#popupremove" class="remove-b"><i class="fa-solid fa-xmark"></i></a>
+                    </td>
+
                     <td><img src="./Img/shopping bag/swim.jpg" alt=""></td>
                     <td class="text">
                         <h1>SWIM, SHARK, SWIM!</h1>
@@ -68,7 +72,8 @@
                     <td>$ 24.99</td>
                 </tr>
                 <tr>
-                    <td><a href="#" class="remove"><i class="fa-solid fa-xmark"></i></a></td>
+                    <td><a href="#popupremove" class="remove-b"><i class="fa-solid fa-xmark"></i></a>
+                    </td>
                     <td><img src="./Img/shopping bag/aus des.jpg" alt=""></td>
                     <td class="text">
                         <h1>AUSTRALIAN DESERTS</h1>
@@ -80,7 +85,8 @@
                     <td>$ 59.99</td>
                 </tr>
                 <tr>
-                    <td><a href="#" class="remove"><i class="fa-solid fa-xmark"></i></a></td>
+                    <td><a href="#popupremove" class="remove-b"><i class="fa-solid fa-xmark"></i></a>
+                    </td>
                     <td><img src="./Img/shopping bag/aus wee.jpg" alt=""></td>
                     <td class="text">
                         <h1>AUSTRALIAN WEEVILS</h1>
@@ -185,11 +191,27 @@
         </div>
 
         <div class="copyright">
-            <p>We acknowledge the Traditional Owners of the land, sea and waters, of the areas that we live and work on across Australia. We acknowledge their continuing connection to their culture, their contribution to our shared knowledge, and pay our respects to their Elders past and present.</p>
+            <p>We acknowledge the Traditional Owners of the land, sea and waters, of the areas that we live and work on
+                across Australia. We acknowledge their continuing connection to their culture, their contribution to our
+                shared knowledge, and pay our respects to their Elders past and present.</p>
             <P>© CSIRO 1996-2022</P>
         </div>
     </footer>
 
+    <!-- popup-remove -->
+    <div class="pop-overlay-remove" id="popupremove">
+        <div class="popup-container">
+            <div class="pop-txt-remove">
+                <h2>Delete this item?</h2>
+                <p>Your item information will be lost.</p> 
+                <p>Do you want to kick it off the cart?</p>
+                <a href="#popup-remove" class="btn" id="delete-btn" onclick="window.location.href='cart.html';">Delete It</a>
+                <a href="#popup-remove" class="btn" id="resume-btn" onclick="window.location.href='cart.html';">Resume Item</a>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
