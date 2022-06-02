@@ -25,7 +25,7 @@
                 <li><a href="Journals.html">Journals</a></li>
                 <li><a href="Learning.html">Learning</a></li>
                 <li><a href="Blog.html">Blog</a></li>
-                <li><a class="highlight" id="sidebar-bag" href="cart.html"><i class="fa-solid fa-bag-shopping"
+                <li><a class="highlight" id="sidebar-bag" href="#popupremove"><i class="fa-solid fa-bag-shopping"
                             style="font-size: 22px;"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
@@ -216,6 +216,19 @@
             <P>© CSIRO 1996-2022</P>
         </div>
     </footer>
+
+    <!-- popup-leave checkout -->
+    <div class="pop-overlay-remove" id="popupremove">
+        <div class="popup-container">
+            <div class="pop-txt-remove">
+                <h2>Leaving Checkout</h2>
+                <p>Your checkout session will be lost. Do you want to leave checkout?</p> 
+                <a href="#popup-remove" class="btn" id="delete-btn" onclick="window.location.href='cart.html';">Leave Checkout</a>
+                <a href="#popup-remove" class="btn" id="resume-btn" onclick="window.location.href='delivery.html';">Resume Checkout</a>
+            </div>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
