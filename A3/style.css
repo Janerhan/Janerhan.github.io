@@ -1424,7 +1424,7 @@ footer .copyright {
     border-radius: 20px;
     box-shadow:0 5px 3px 2px #1b303b79;
     margin: 100px auto;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     justify-items: center;
     transition: 0.3s ease-in-out;
@@ -1461,7 +1461,7 @@ footer .copyright {
     padding: 0 15px;
     color: #1b303b;
     font-size: 13px;
-    width: 264px;
+    width: 100%;
     line-height: 30px;
     border: #263c476b solid;
     border-radius: 5px;
@@ -1484,7 +1484,7 @@ footer .copyright {
 
 #small p {
     padding: 6px;
-    padding-left: 150px;
+    padding-left: 233px;
 }
 
 
@@ -2273,11 +2273,23 @@ footer .copyright {
         height: 35vh;
     }
 
-    .popup-container {
+    .popup-container,
+    .popup-container-login {
         width: 79%;
     }
 
+    .pop-txt-login h2{
+        font-size: 18px;
+    }
 
+    #small {
+        flex-direction: column;
+    }
+
+    #small p {
+        margin: 0;
+        padding: 0;
+    }
 
 }
 
