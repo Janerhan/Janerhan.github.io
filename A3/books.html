@@ -16,24 +16,25 @@
 <body>
     <!--Header & Navbar-->
     <section id="header">
-        <a href="index.html"><img src="Img/csiro logo.png" class="logo" id="L"calt=""></a>
+        <a href="index.html"><img src="Img/csiro logo.png" class="logo" id="L" calt=""></a>
 
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a class="highlight" href="books.html">Books</a></li>
-                <li><a href="Journals.html">Journals</a></li>
-                <li><a href="Learning.html">Learning</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a id="sidebar-bag" href="cart.html"><i class="fa-solid fa-bag-shopping" style="font-size: 22px;"></i></a></li>
+                <li><a href="#popupsos">Journals</a></li>
+                <li><a href="#popupsos">Learning</a></li>
+                <li><a href="#popupsos">Blog</a></li>
+                <li><a id="sidebar-bag" href="cart.html"><i class="fa-solid fa-bag-shopping"
+                            style="font-size: 22px;"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
-            <div class="search-box">
-                <input class="search-txt" type="text" placeholder="Search Name, Author or ISBN...">
-                <a id="searchbtn" class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-            </div>
+        <div class="search-box">
+            <input class="search-txt" type="text" placeholder="Search Name, Author or ISBN...">
+            <a id="searchbtn" class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
         <div id="mobile">
             <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
             <i id="bar" class="fa-solid fa-align-right"></i>
@@ -199,44 +200,43 @@
     </section>
 
     <!-- mobile-sidebar -->
-    <section id="mobile_sidebar">
-
-        <div class="wrapper">
-            <div class="menu-bar" id="menubar">
-                <span>Category</span>
-                <select name="" id="Category_bar">
-                    <option value="animal">Animals</option>
-                    <option value="Children">Children</option>
-                    <option value="Gardening">Gardening</option>
-                    <option value="Architecture">Architecture</option>
-                    <option value="Plants & Fungi">Plants & Fungi</option>
-                    <option value="Physical Science">Physical Science</option>
-                    <option value="Science in Society">Science in Society</option>
-                    <option value="Food & Agriculture">Food & Agriculture</option>
-                    <option value="Marine & Freshwater">Marine & Freshwater</option>
-                    <option value="Natural Environment">Natural Environment</option>
-                </select>
-                <span>Price</span>
-                <select name="" id="price_bar">
-                    <option value="High - Low">High - Low</option>
-                    <option value="Low - High">Low - High</option>
-                </select>
-                <span>State</span>
-                <select name="" id="state_bar">
-                    <option value="Instock">In stock</option>
-                    <option value="Magzines">Magzines</option>
-                    <option value="Pre-Ordered">Pre-Ordered</option>
-                </select>
-                <span>Sort</span>
-                <select name="" id="sort_bar">
-                    <option value="Relevance"> Relevance</option>
-                    <option value="Alphabetically"> Alphabetically</option>
-                    <option value="PublicationDate"> Publication Date</option>
-                </select>
-                <i id="closebtn" class="fa-solid fa-xmark"></i>
-            </div>
+    <div id="mobile_sidebar">
+        <div class="menu-bar" id="menubar">
+            <span>Category</span>
+            <select name="" id="Category_bar">
+                <option value="animal">Animals</option>
+                <option value="Children">Children</option>
+                <option value="Gardening">Gardening</option>
+                <option value="Architecture">Architecture</option>
+                <option value="Plants & Fungi">Plants & Fungi</option>
+                <option value="Physical Science">Physical Science</option>
+                <option value="Science in Society">Science in Society</option>
+                <option value="Food & Agriculture">Food & Agriculture</option>
+                <option value="Marine & Freshwater">Marine & Freshwater</option>
+                <option value="Natural Environment">Natural Environment</option>
+            </select>
+            <span>Price</span>
+            <select name="" id="price_bar">
+                <option value="High - Low">High - Low</option>
+                <option value="Low - High">Low - High</option>
+            </select>
+            <span>State</span>
+            <select name="" id="state_bar">
+                <option value="Instock">In stock</option>
+                <option value="Magzines">Magzines</option>
+                <option value="Pre-Ordered">Pre-Ordered</option>
+            </select>
+            <span>Sort</span>
+            <select name="" id="sort_bar">
+                <option value="Relevance"> Relevance</option>
+                <option value="Alphabetically"> Alphabetically</option>
+                <option value="PublicationDate"> Publication Date</option>
+            </select>
+            <i id="closebtn" class="fa-solid fa-xmark"></i>
         </div>
-    </section>
+    </div>
+
+
 
     <!-- page number -->
     <section id="page-number" class="padding-1">
@@ -284,6 +284,17 @@
             <P>© CSIRO 1996-2022</P>
         </div>
     </footer>
+
+    <!-- sospage-popup -->
+    <div class="pop-overlay-sos" id="popupsos">
+        <div class="popup-container-sos">
+            <div class="pop-txt-sos">
+                <h2>Error 404</h2>
+                <p>Page Not Found</p>
+                <a href="books.html" class="btn" id="delete-btn">Go Back</a>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

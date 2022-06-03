@@ -108,6 +108,10 @@ h1 {
     display: none;
 }
 
+
+
+
+
 #mobile i {
     color: #ffffff;
     font-size: 24px;
@@ -721,9 +725,7 @@ footer .copyright {
     size: 50px;
 }
 
-/* #mobile_sidebar {
-    display: none;
-} */
+
 
 
 
@@ -1402,33 +1404,46 @@ footer .copyright {
 
 /* popup-remove */
 
-.popup-container {
+.popup-container,
+.popup-container-login,
+.popup-container-sos {
     position: relative;
-    width: 35%;
-    height: 27vh;
     background-color: #ffffffdc;
     border-radius: 20px;
     box-shadow:0 5px 3px 2px #1b303b79;
     margin: 100px auto;
-    padding: 20px;
     align-items: center;
     justify-items: center;
     transition: 0.3s ease-in-out;
+}
+.popup-container {
+    width: 35%;
+    height: 27vh;
+    padding: 20px;
 }
 
 .popup-container-login {
-    position: relative;
     width: 35%;
     height: 45vh;
-    background-color: #ffffffdc;
-    border-radius: 20px;
-    box-shadow:0 5px 3px 2px #1b303b79;
-    margin: 100px auto;
     padding: 10px;
-    align-items: center;
-    justify-items: center;
-    transition: 0.3s ease-in-out;
 }
+
+.popup-container-sos {
+    width: 25%;
+    height: 20vh;
+    padding: 10px;
+}
+
+.pop-txt-sos {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
 
 
 .pop-txt-remove,
@@ -1441,14 +1456,27 @@ footer .copyright {
     padding: 10px;
 }
 
+.pop-txt-sos p{
+    margin-top: 10px;
+}
 
 
 .pop-txt-remove h2,
 .pop-txt-login h2,
 .pop-txt-remove p,
-.pop-txt-login{
+.pop-txt-login,
+.pop-txt-sos h2,
+.pop-txt-sos p{
     background-color: transparent;
     color: #1b303b;
+}
+
+.pop-txt-sos .btn {
+    margin-top: 20px;
+}
+
+.pop-txt-sos .btn:hover{
+    box-shadow: 0 0 5px 3px #263c4784;
 }
 
 .pop-txt-login input{
@@ -1534,12 +1562,14 @@ footer .copyright {
 
 .popup-overlay,
 .pop-overlay-remove,
-.pop-overlay-login {
+.pop-overlay-login,
+.pop-overlay-sos {
     background-color: unset;
 }
 .popup-overlay,
 .pop-overlay-remove,
-.pop-overlay-login{
+.pop-overlay-login,
+.pop-overlay-sos{
     position: fixed;
     top: 20px;
     bottom: 0;
@@ -1553,7 +1583,8 @@ footer .copyright {
 
 .popup-overlay:target,
 .pop-overlay-remove:target,
-.pop-overlay-login:target {
+.pop-overlay-login:target,
+.pop-overlay-sos:target {
     visibility: visible;
     opacity: 1;
   }
@@ -1625,7 +1656,9 @@ footer .copyright {
 
 
 
-
+#dropbtn {
+    display: none;
+}
 
 
 
@@ -1914,6 +1947,7 @@ footer .copyright {
     }
 
     #dropbtn{
+        display: block;
         font-size: 24px;
         color: #ffffffe0;
         padding-left: 108px;
@@ -2274,7 +2308,8 @@ footer .copyright {
     }
 
     .popup-container,
-    .popup-container-login {
+    .popup-container-login,
+    .popup-container-sos {
         width: 79%;
     }
 
@@ -2290,6 +2325,7 @@ footer .copyright {
         margin: 0;
         padding: 0;
     }
+
 
 }
 
