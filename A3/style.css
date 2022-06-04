@@ -614,10 +614,6 @@ footer .copyright {
 
 
 
-
-
-
-
 /* product list section grid */
 #product {
     padding: 0px 354px;
@@ -712,7 +708,6 @@ footer .copyright {
 
 
 
-
 /* page number */
 
 #page-number {
@@ -732,8 +727,6 @@ footer .copyright {
     background-color: #335c717a;
     size: 50px;
 }
-
-
 
 
 
@@ -838,9 +831,18 @@ footer .copyright {
     outline: none;
 }
 
-#product-detail .col2 button {
-    margin-right: 60px;
+
+#bookdetail_btn {
+    display: flex;
+    flex-direction: row;
 }
+
+#bookdetail_btn button{
+    margin-left: 37px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
 
 /* book-details box */
 #book-details {
@@ -1562,7 +1564,12 @@ footer .copyright {
 }
 
 
-
+#product-detail .img-book {
+    border-radius: 20px;
+    margin-bottom: 45px;
+    width: 100%;
+    height: 400px;
+}
 
 
 /* popup setting*/
@@ -2334,34 +2341,24 @@ footer .copyright {
         padding: 0;
     }
 
+    #product-detail .img-book {
+        border-radius: 20px;
+        margin-bottom: 45px;
+        width: 100%;
+        height: 410px;
+    }
+
+    #bookdetail_btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bookdetail_btn button{
+        margin-left: 0;
+    }
+
 
 }
 
 
 
-
-/* #product-detail .col2 button{
-    width: auto;
-    padding: 7px 30px;
-    margin-right:50px;
-    outline: none;
-    border: 1px solid #8abf8ebc;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #1b303b;
-    font-weight: 700;
-    background-color: #8abf8ebc;
-    font-size: 18px;
-} */
-
-/* .icons div{
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 1.6rem;
-    margin-left: 2.5rem;
-    transition: 0.3s ease;
-}
-
-.icons div:hover{
-    color: #8abf8a
-} */

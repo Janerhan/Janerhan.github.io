@@ -16,16 +16,16 @@
 <body>
     <!--Header & Navbar-->
     <section id="header">
-        <a href="#"><img src="Img/csiro logo.png" class="logo" id="L" calt=""></a>
+        <a href="index.html"><img src="Img/csiro logo.png" class="logo" id="L" calt=""></a>
 
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Books.html">Books</a></li>
-                <li><a href="Journals.html">Journals</a></li>
-                <li><a href="Learning.html">Learning</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a class="highlight" id="sidebar-bag" href="#popupremove"><i class="fa-solid fa-bag-shopping"
+                <li><a class="highlight" href="Books.html">Books</a></li>
+                <li><a href="#popupsos">Journals</a></li>
+                <li><a href="#popupsos">Learning</a></li>
+                <li><a href="#popupsos">Blog</a></li>
+                <li><a id="sidebar-bag" href="cart.html"><i class="fa-solid fa-bag-shopping"
                             style="font-size: 22px;"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
@@ -42,63 +42,47 @@
 
     </section>
 
-    <!-- Checkout-login -->
-    <section id="login">
-        <div id="left-col">
-            <h1>Checkout</h1>
-            <div>
-                <ul id="process-box">
-                    <li><a class="highlight" href="login.html">Join</a></li>
-                    <li><a href="delivery.html">Delivery</a></li>
-                    <li><a href="pay.html">Payment</a></li>
-                </ul>
-            </div>
-            <h2>Personal information</h2>
-            <div id="login-table">
-                <form action="">
-                    <input type="text" placeholder="Your First name">
-                    <input type="text" placeholder="Your Last name">
-                    <input type="text" placeholder="Phone number">
-                    <input type="text" placeholder="E-mail">
-                </form>
-                <a href="delivery.html"><button class="btn">KEEP CHECKOUT</button></a>
+    <!-- product detail -->
+    <section id="product-detail" class="padding-1">
+        <div class="col1">
+            <img src="./Img/books_like section/shark.jpg" class="img-book" width="100%" alt="">
+            <span>Share By</span>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-square" style="font-size:30px"></i>
+                <i class="fa-brands fa-twitter" style="font-size:30px"></i>
+                <i class="fa-brands fa-instagram" style="font-size:30px"></i>
+                <i class="fa-brands fa-linkedin" style="font-size:30px"></i>
             </div>
         </div>
-        <div id="right-col" class="login-right-col">
-            <h4>Summary</h4>
-            <h2>Arrives Thu, 21 Apr - Sun, 8 May</h2>
-            <table width="100%">
-                <tbody>
-                    <td class="sum-item-box"><img src="./Img/shopping bag/swim.jpg" alt=""></td>
-                    <td class="text">
-                        <h1>SWIM, SHARK, SWIM!</h1>
-                        <h2>By Dom Conlon, Anastasia Izlesou</h2>
-                        <h3>Children</h3>
-                        <p>Qty 1</p>
-                    </td>
-                    <td class="price">$24.99</td>
-                </tbody>
-                <tbody>
-                    <td class="sum-item-box"><img src="./Img/shopping bag/aus des.jpg" alt=""></td>
-                    <td class="text">
-                        <h1>AUSTRALIAN DESERTS</h1>
-                        <h2>By Steve Morton</h2>
-                        <h3>Natural Environment</h3>
-                        <p>Qty 1</p>
-                    </td>
-                    <td class="price">$59.99</td>
-                </tbody>
-                <tbody>
-                    <td class="sum-item-box"><img src="./Img/shopping bag/aus wee.jpg" alt=""></td>
-                    <td class="text">
-                        <h1>AUSTRALIAN WEEVILS</h1>
-                        <h2>By Rolf Oberprieler</h2>
-                        <h3>Animals</h3>
-                        <p>Qty 2</p>
-                    </td>
-                    <td class="price">$360.00</td>
-                </tbody>
-            </table>
+        <div class="col2">
+            <span>Home > You Might Also Like</span>
+            <h1>Shark Attacks</h1>
+            <p>Humans spend more time in or on the water than ever before. 
+                We love the beach. But for many people, getting in the water provokes a moment’s hesitation.
+                 Shark attacks are big news events and although the risk of shark attack on humans is incredibly low, 
+                 the fact remains that human lives are lost to sharks every year.
+            </p>
+            <h2>Blake Chapman</h2>
+            <h3>Animals</h3>
+            <h4>AU $39.95</h4>
+            <div id="bookdetail_btn">
+                <input type="number" value="1">
+                <a href="#popupsos"><button class="btn">LOOK INSIDE</button></a>
+                <a href="cart.html"><button class="btn">ADD TO CART</button></a>
+            </div>
+            <div>
+                <ul id="book-details">
+                    <li><a href="#">Reviews</a></li>
+                    <li><a class="highlight" href="#">Details</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contents</a></li>
+                </ul>
+                <p class="details"> <br>| March 2022 | $ 24.99 </br>
+                    <br>ISBN: 9781486316045 | 32 pages | 250 x 250 mm</br>
+                    <br>Publisher: CSIRO Publishing</br>
+                    <br>Colour illustrations</br>
+                </p>
+            </div>
         </div>
     </section>
 
@@ -173,22 +157,18 @@
         </div>
     </footer>
 
-   
-
-    <!-- checkout-popup -->
-    <div class="pop-overlay-remove" id="popupremove">
-        <div class="popup-container">
-            <div class="pop-txt-remove">
-                <h2>Leaving Checkout</h2>
-                <p>Your checkout session will be lost. Do you want to leave checkout?</p>
-                <a href="#popup-remove" class="btn" id="delete-btn" onclick="window.location.href='cart.html';">Leave
-                    Checkout</a>
-                <a href="#popup-remove" class="btn" id="resume-btn" onclick="window.location.href='login.html';">Resume
-                    Checkout</a>
+    <!-- sospage-popup -->
+    <div class="pop-overlay-sos" id="popupsos">
+        <div class="popup-container-sos">
+            <div class="pop-txt-sos">
+                <h2>Error 404</h2>
+                <p>Page Not Found</p>
+                <a href="subooks.html" class="btn" id="delete-btn">Go Back</a>
             </div>
         </div>
     </div>
 
+    
     <script src="script.js"></script>
 </body>
 

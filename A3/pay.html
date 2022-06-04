@@ -110,8 +110,23 @@
                     Save this card for further payment
                 </label>
             </div>
+            <!-- popup -->
+        <a href="#popup" class="btn">PLACE ORDER</a>
+        <div class="popup-overlay" id="popup">
+            <div class="popup-txt">
+                <div class="content">
+                    <a href="#"><i id="email" class="fa-solid fa-envelope-open-text"></i></a>
+                    <h1>Your order is complete!</h1>
+                    <a href="index.html" class="close_popup"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="txt">
+                        You will be receiving a confirmation email with order details
+                    </div>
+                    <a href="#popup" class="btn" onclick="window.location.href='index.html';">BACK TO HOME</a>
+                </div>
+            </div>
         </div>
-
+        </div>
+        
 
         <div id="right-col">
             <h4>Summary</h4>
@@ -172,7 +187,7 @@
     <section id="Like">
         <h1>You Might Also Like</h1>
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='subooks.html';">
+            <div class="pro" onclick="window.location.href='subooks_shark.html';">
                 <img src="./Img/books_like section/shark.jpg" alt="">
                 <div class="des">
                     <h2>Shark Attacks</h2>
@@ -239,30 +254,16 @@
         </div>
     </footer>
 
-    <!-- popup -->
-    <a href="#popup" class="btn">PLACE ORDER</a>
-    <div class="popup-overlay" id="popup">
-        <div class="popup-txt">
-            <div class="content">
-                <a href="#"><i id="email" class="fa-solid fa-envelope-open-text"></i></a>
-                <h1>Your order is complete!</h1>
-                <a href="index.html" class="close_popup"><i class="fa-solid fa-xmark"></i></a>
-                <div class="txt">
-                    You will be receiving a confirmation email with order details
-                </div>
-                <a href="#popup" class="btn" onclick="window.location.href='index.html';">BACK TO HOME</a>
-            </div>
-        </div>
-    </div>
-
     <!-- popup-leave checkout -->
     <div class="pop-overlay-remove" id="popupremove">
         <div class="popup-container">
             <div class="pop-txt-remove">
                 <h2>Leaving Checkout</h2>
-                <p>Your checkout session will be lost. Do you want to leave checkout?</p> 
-                <a href="#popup-remove" class="btn" id="delete-btn" onclick="window.location.href='cart.html';">Leave Checkout</a>
-                <a href="#popup-remove" class="btn" id="resume-btn" onclick="window.location.href='pay.html';">Resume Checkout</a>
+                <p>Your checkout session will be lost. Do you want to leave checkout?</p>
+                <a href="#popup-remove" class="btn" id="delete-btn" onclick="window.location.href='cart.html';">Leave
+                    Checkout</a>
+                <a href="#popup-remove" class="btn" id="resume-btn" onclick="window.location.href='pay.html';">Resume
+                    Checkout</a>
             </div>
         </div>
     </div>
@@ -272,21 +273,3 @@
 </body>
 
 </html>
-
-<!-- jump different page via btn -->
-<!-- 
-<div onclick="window.location.href='books.html';">
-    <button class="btn" type="button">Explore</button>
-</div> -->
-
-<!-- <button id="open_popup">
-    click
-</button>
-
-<div class="popup-container" id="popup_container">
-    <div class="popup">
-        <h1>Your order is complete!</h1>
-        <p>You will be receiving a confirmation email with order details</p>
-        <button id="close_popup">BACK TO HOME</button>
-    </div>
-</div> -->
