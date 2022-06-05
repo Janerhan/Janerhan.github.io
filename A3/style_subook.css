@@ -1,0 +1,158 @@
+/* product detail page */
+
+#product-detail {
+    padding: 40px 10%;
+    display: flex;
+}
+
+#product-detail .col1 {
+    width: 23%;
+    margin-right: 70px;
+}
+
+#product-detail .img-book {
+    border-radius: 20px;
+    margin-bottom: 45px;
+}
+
+#product-detail span {
+    font-size: 19px;
+    color: #ffffffc8;
+    font-weight: 550;
+}
+
+#product-detail i {
+    color: aliceblue;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: 0.3s ease;
+}
+
+#product-detail i:hover {
+    color: #a3e1a3;
+}
+
+#product-detail .col2 {
+    width: 60%;
+    padding-top: 30px;
+}
+
+#product-detail .col2 span {
+    color: #BDC3C7;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 1.3rem 0;
+}
+
+#product-detail .col2 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+#product-detail .col2 p {
+    line-height: 25px;
+    color: #7296aa;
+    padding-top: 20px;
+}
+
+#product-detail .col2 h2 {
+    color: #BDC3C7;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+#product-detail .col2 h3 {
+    color: #709e70;
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+#product-detail .col2 h4 {
+    color: #709e70;
+    font-size: 19px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#product-detail .col2 input {
+    width: 50px;
+    height: 47px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-right: 50px;
+    color: #ffffff95;
+    border: #ffffff95 solid;
+    border-radius: 20%;
+}
+
+#product-detail .col2 input:focus {
+    outline: none;
+}
+
+
+#bookdetail_btn {
+    display: flex;
+    flex-direction: row;
+}
+
+#bookdetail_btn button{
+    margin-left: 37px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+
+/* book-details box */
+#book-details {
+    width: 50%;
+    padding-top: 50px;
+    margin-left: 0;
+    display: flex;
+}
+
+#book-details li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 8rem;
+    padding-bottom: 20px;
+}
+
+
+#book-details li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffffc8;
+    font-weight: 400;
+
+}
+
+#book-details li a:hover {
+    text-decoration: underline;
+    background-color: #263C47;
+    border-radius: 5%;
+
+}
+
+#book-details li a.highlight {
+    color: #8abf8a;
+    text-decoration: underline;
+    border-radius: 5%;
+    padding-bottom: 20px;
+}
+
+#product-detail p.details {
+    background-color: #263C47;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    color: #ffffff;
+    text-align: left;
+    margin-top: -20px;
+    font-size: 14px;
+}

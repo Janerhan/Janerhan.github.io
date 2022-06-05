@@ -513,7 +513,6 @@ footer .copyright {
 
 
 
-
 /* Product List Page*/
 
 /* sidebar */
@@ -892,8 +891,9 @@ footer .copyright {
     font-size: 14px;
 }
 
-/* cart page */
 
+
+/* cart page */
 
 
 #email {
@@ -2370,9 +2370,6 @@ footer .copyright {
     #changes a {
         padding-left: 0;
     }
-
-    
-
 
 }
 
