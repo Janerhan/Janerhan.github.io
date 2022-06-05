@@ -1433,7 +1433,7 @@ footer .copyright {
 
 .popup-container-login {
     width: 35%;
-    height: 45vh;
+    height: 48vh;
     padding: 10px;
 }
 
@@ -2023,7 +2023,7 @@ footer .copyright {
 
     .menu-bar select {
         padding: 15px 0px 15px 0px;
-        width: 79%;
+        width: 85%;
         cursor: pointer;
         border: none;
         outline: none;
@@ -2296,6 +2296,9 @@ footer .copyright {
         margin-left: 50px;
     }
 
+    #login_btn{
+        font-size: 14px;
+    }
     .popup-txt {
         width: 70%;
     }
@@ -2305,7 +2308,7 @@ footer .copyright {
     }
 
     #login h1 {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .txt {
@@ -2319,7 +2322,7 @@ footer .copyright {
         margin-top: 30px;
     }
     .popup-txt {
-        height: 35vh;
+        height: 36vh;
     }
 
     .popup-container,
