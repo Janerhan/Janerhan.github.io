@@ -2176,6 +2176,9 @@ footer .copyright {
         width: 100%;
     }
 
+
+
+
     #process-box ul {
         flex-direction: row;
     }
@@ -2359,6 +2362,16 @@ footer .copyright {
     #bookdetail_btn button{
         margin-left: 0;
     }
+
+    .popup-container-login {
+        height: auto;
+    }
+
+    #changes a {
+        padding-left: 0;
+    }
+
+    
 
 
 }
